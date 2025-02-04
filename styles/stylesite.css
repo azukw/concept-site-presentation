@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rethink+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/luam'); */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D4C3FE;
+    margin: 0;
+    padding: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        background-color: #fff;
+        opacity: 1;
+     }
+}
+
+/* Style du header */
+.header {
+    background-color: #D4C3FE;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 50px;
+}
+
+/* Style du logo avec un espacement de 150px à droite */
+.logo {
+    margin-right: 150px; 
+    width: 50px; 
+    height: 50px; 
+}
+
+a  {
+    text-decoration: none;
+    color: #000;
+}
+/* Style des liens dans le header */
+.header a {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 550;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 20px; 
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+}
+
+.header a:hover {
+    
+    color: #e3007e;
+}
+
+.header button[href="#cont"] {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 100px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    text-align: center;
+    padding:  7px 18px;
+    color: #fff;
+    background-color: #e3007e;
+    margin-left: 150px; 
+    
+}
+
+.header button:hover {
+    background-color: #D4C3FE;
+    color: black;
+}
+
+/* Style du côté droit du header */
+.header-right {
+    margin: 10px 0;
+}
+
+.hero {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    margin-top: 5%;
+    margin-left: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.hero h1 {
+    
+    font-size: 85px;
+    font-weight: 400;
+    margin: 0; 
+    line-height: 1; 
+}
+
+.hero .highlight {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.groslogo {
+    padding-right: 400px;
+}
+
+/* Style du contenu principal */
+.principal {
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 400px; /* Espacement intérieur pour le contenu principal */
+    overflow: hidden;
+}
+
+/* Style du titre h1 dans le contenu principal */
+.principal h1 {
+    display: block;
+    font-weight: 700;
+    padding-left: 45px;
+}
+
+strong {
+    position: relative;
+}
+
+strong::before {
+    background-color: #ffed00;
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 50%;
+    left: -2px;
+    top: 20px;
+    z-index: -1;
+}
+
+/* Style du sous-titre dans le contenu principal */
+.principal span {
+    font-weight: bold;
+}
+
+
+.principal p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 0px 50px;
+    display: block; /* Faire du paragraphe un élément de bloc */
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16.5px;
+    color: #000;
+    word-spacing: 3px;
+    margin-top: 10px; /* Espacement au-dessus du paragraphe */
+}
+
+
+/* Style du bouton à l'intérieur du conteneur */
+.principal button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+    border-color: #ff008c;
+    border-width: 1px;
+    padding: 3px 20px;
+    color: #fff;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    background-color: #e3007e;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto; /* Centrer le bouton horizontalement avec une marge en haut et en bas */
+    
+}
+
+.principal button:hover {
+    background-color: #fff;
+    color: #e3007e;
+}
+
+.presta {
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 400px; /* Espacement intérieur pour le contenu principal */
+    overflow: hidden;
+}
+
+/* Style du titre h1 dans le contenu principal */
+.presta h1 {
+    margin-top: -50px;
+    display: block;
+    font-weight: 700;
+    padding-left: 45px;
+}
+
+.refs {
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 400px; /* Espacement intérieur pour le contenu principal */
+    overflow: hidden;
+}
+
+/* Style du titre h1 dans le contenu principal */
+.refs h1 {
+    margin-top: -50px;
+    display: block;
+    font-weight: 700;
+    padding-left: 45px;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 10px;
+    text-align: center
+;}
+
+.footer p {
+    margin-left: 25%;
+    padding: 10px 0;}
+
+.footer a {
+    margin: 0 5px; 
+}
+
+.footer-icons {
+    margin-left: 35%;
+}
+
+.slash {
+    
+    transform: rotate(90deg);
+    display: inline; 
+    font-weight: 600;
+    color: #e3007e;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+
+  
+@keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0,0);
+      opacity: 1;
+    }
+}
+
+.card {
+    margin-left: 50px;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.presta a[href] {
+    position: relative;
+}
+.presta a[href], .presta a[href]:link, .presta a[href]:visited, .presta a[href]:active {
+    text-decoration: none;
+    color: #d8276c;
+    text-shadow: 2px 2px 2px #070c11;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+.presta a[href]::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    width: 0;
+    height: 1px;
+    transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.presta article.card {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+.presta article.card .thumb {
+    height: 200px;
+    border-radius: 15px 15px 0 0; 
+    overflow: hidden; 
+}
+
+.presta article.card .thumb img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0;
+}
+
+.presta article.card .infos {
+    width: auto;
+    height: 350px;
+    position: relative;
+    padding: 0px 50px;
+    background: #fff;
+    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.presta article.card .infos .title {
+    bottom: 10%;
+    margin-bottom: -30px;
+    background-color: white;
+    border: 1px solid #d3d3d3; 
+    border-radius: 100px; 
+    padding: 15px; 
+    font-weight: 700;
+    position: relative;
+    letter-spacing: 4px;
+    color: #e3007e;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.presta article.card .infos .date, article.card .infos .seats {
+    font-size: 0.85rem;
+    color: #6F63A8;
+    font-weight: 400;
+}
+.presta article.card .infos .details {
+    left: 0;
+    bottom: 0;
+    letter-spacing: 1px;
+    color: #d300b7;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.presta article.card:hover .infos {
+    transform: translateY(-30px);
+}
+.presta article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
+    opacity: 1;
+}
+
+
+.refs button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 20px;
+    border-color: #ff008c;
+    border-width: 1px;
+    padding: 7px 25px;
+    color: #fff;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    background-color: #e3007e;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto; /* Centrer le bouton horizontalement avec une marge en haut et en bas */
+    
+}
+
+.refs button:hover {
+    background-color: #fff;
+    color: #e3007e;
+}
+
+.wrapper{
+    left: 5%;
+    margin-top: 70px;
+    display: flex;
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    border-radius: 50%;
+    height: 130px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 60px;
+    width: 130px
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+
+
+  
